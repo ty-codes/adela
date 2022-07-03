@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ 
+  <center class="container">
+    <header id="header">
+      <nav id="nav-bar" style="top: 0;">
+        <div class="logo">
+            <img src="http://127.0.0.1:5500/img/logo.svg" alt="Logo Image" id="header-img">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About us</a></li>
+          <li><a class="nav-link" href="#products">Products</a></li>
+          <li><a class="nav-link" href="#">Testimonials</a></li>
+          <li><a class="nav-link" href="#">Cart</a></li>
+          <li><a class="nav-link" href="#contact">Contact Us</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    
+
+     <section class="hero container" id="about">
+      <div class="container">
+        <div class="caption" align="left">
+          <h1 style="font-family: Lexend Deca" class="text-uppercase" ><span style="color: white">Glow with <br> </span ><span style="color:#41c27d; font-weight: 500;"> adela </span> </h1>
+          <div style="padding: 15px 0 0 0"></div>
+          <hr>
+          <p class="enhance" style="color:white; font-family: montserrat; font-weight: 200; margin-top: 0; padding: 0;">Quality Skincare For You</p>
+  
+          <a href="#products" class="app_store_btn text-uppercase">
+            <span>Our Products</span>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+    <div style="margin-top: 40px"></div>
+
+
+    <h1 class="heading text-uppercase"><span style="color: #41c27d">Discover</span> radiant skin</h1>
+
+    <!--outreach-->
+    <section class="info" id="info">
+      <div>
+        <h1 class="text1">We offer to take your skin to the next level, through optimized skin therapy
+          that will transform your skin. We also offer one-on-one consultation services and referrals
+          to well experienced dermatologists, if the need arises. Our equipment are industry standard
+          and we work with other skin care professionals across nigeria to ensure our service delivery is at its peak.
+          We are also involved in skin-based research as we improve the quality of skin care for years to come. Our products are well tested and certified.<br>
+          Quality skin care at its best.
+        </h1>
+        <img class="image1" src="./img/five.jpg" alt='child holding hands out'>
+      </div>
+    </section>
+    
+    
+    <div style="padding-top: 10px;"></div>
+
+    
+    <!-- products -->
+    <section class="products" id="products">
+      <div style="display: block;">
+        <img class="section_icon" src="./img/shopping-cart.png" alt="doc icon">
+        <a class="section" href="#"><h2 class="heading text-uppercase">Products</h2></a>
+
+      </div>
+      <div class="bg_wrap">
+        <div id="product_img">
+          <img id="product" src="./img/prod1.jpg" alt="product">
+          <button id="prev_arrow" class="prev_arrow_icon" disabled></button>
+          <br>
+          <button id="next_arrow" class="next_arrow_icon"></button>
+        </div>    
+      </div>
+    
+    </section>
+    <div style="padding-top: 20px;"></div>
+    <!--doctor-->
+    <section class="doctor">
+      <div style="display: block;">
+        <img class="section_icon" src="./img/doc_icon.png" alt="doc icon">
+        <a class="section" href="#"><h2 class="heading text-uppercase">Meet our doctors</h2></a>
+        <img class="doc_img" src="./img/doc.jpg" alt="doc pic">
+      </div>
+    </section>
+    <!-- video -->
+    <div style="padding-top: 150px;"></div>
+    <section class="video">
+      <div style="padding-top: 10px;"></div>
+
+      <video id="video" width="60%" height="200px" poster="./img/vid_img.png" autoplay loop muted >
+        <source src="./img/vid.mp4" type="video/mp4" t>
+        Your browser does not support this video format
+
+      </video>
+    </section>
+
+    <section>
+      <form id="form" method="get" action="https://www.freecodecamp.com/email-submit">
+        <hr>
+        <br><div id="newsletter">Subscribe to our newsletter to get articles about haircare, health and beauty<br></div>
+        <div style="padding-top: 10px"></div>
+
+        <label for="name"></label>
+        <input id="name" name="name" type='text' maxlength='30' class='inputBox' placeholder='Name' required>
+
+        <label for="email"></label>
+        <input id="email" name="email" type='email' minlength='30' class='inputBox' placeholder='Email' required>
+        
+        <div align='center'>
+          <input class="text-uppercase" id="submit" type="submit" value='Submit' >
+        </div>
+        <div style="padding-top:20px;"></div>
+      </form>
+
+    </section>
+
+    <section id="contact">
+      <div style="display: block;">
+        <img class="section_icon" src="./img/letter.png" alt="doc icon">
+        <a class="section" href="#"><h2 class="section-header text-uppercase">Contact Us</h2></a>
+      </div>      
+      <div class="contact-wrapper">
+      
+        <!-- Left contact page --> 
+        
+        <form id="contact-form" class="form-horizontal" role="form">
+            
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+            </div>
+          </div>
+    
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+          
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+              <span class="send-text"><img width="45px" height="18px" src="./img/paperplane.svg"></span>
+
+              <span class="send-text">SEND</span>
+            </div>
+          
+          </button>
+          
+        </form>
+          
+        <!-- Left contact page --> 
+          
+        <div class="direct-contact-container">
+
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Lagos State</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(234) 80-0000-0000</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+            
+          </ul>
+
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="#" class="contact-icon">
+              <span><img src="./img/fb.svg"></span>
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <span><img src="./img/insta.svg"></span>
+
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <span><img src="./img/twitter.svg"></span>
+
+            </li>
+            <li><a href="#" target="_blank" class="contact-icon">
+              <span><img src="./img/whatsapp.svg"></span>
+            </li>       
+          </ul>
+          <hr>
+
+          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+        </div>
+        
+      </div>
+      
+    </section> 
+  
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
