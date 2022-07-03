@@ -1,2 +1,2 @@
 # adela
-# peoduct landing page for adela
+# product landing page for adela
